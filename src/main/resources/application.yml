@@ -1,2 +1,16 @@
-{
-    }
+app:
+  name: MySpringBootApp
+  version: 1.0.0
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/blogging_platform?useSSL=false
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
